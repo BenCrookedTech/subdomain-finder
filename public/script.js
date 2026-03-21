@@ -7,7 +7,7 @@ async function startScanning() {
     const text = await response.text();
     const lines = text.split('\n').map(l => l.trim()).filter(l => l);
 
-    display.textContent = `Scanning...\n"`;
+    display.textContent = `Scanning...\n`;
 
     
     const processSubdomain = async (subdomain) => {
